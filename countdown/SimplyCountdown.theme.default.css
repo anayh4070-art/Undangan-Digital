@@ -27,3 +27,15 @@
 .simply-countdown > .simply-section .simply-amount {
   font-size: 1.6rem;
 }
+.simply-countdown {
+  display: flex !important;
+  justify-content: center;
+  gap: 15px; /* Memberi jarak antar angka */
+}
+
+.simply-countdown .simply-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
