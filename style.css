@@ -1,0 +1,645 @@
+:root {
+  --coklat: #b44a04;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  min-height: 4000px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 6rem;
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: var(--coklat);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: var(--coklat);
+  color: white;
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.home {
+  background-image: url(img/bg.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.home h2,
+.info h2,
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
+  color: var(--coklat);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.home h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.home .couple {
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  font-family: "Sacramento";
+  font-size: 2.4rem;
+  color: var(--coklat);
+}
+
+.home .couple img {
+  width: 100%;
+  height: 150px;
+}
+
+.home .heart {
+  width: 80px;
+  height: 80px;
+  background-color: #b44a04;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--bg);
+}
+
+.info {
+  background-color: #f4eae1 !important;
+  color: #5c4033 !important;
+  padding-top: 15rem;
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  border: 1px solid #5c4033 !important;
+  color: #5c4033 !important;
+}
+
+.info h2,
+.info h3,
+.info p,
+.info span,
+.info .card-header,
+.info .card-body {
+  color: #5c4033 !important;
+}
+
+.info .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.story,
+.gallery,
+.rsvp,
+.gifts {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.story span,
+.gallery span,
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-image {
+  width: 160px;
+  height: 160px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+
+.gallery {
+  background-color: #f5f5f5;
+}
+.gallery {
+  background-color: #f5f5f5;
+  /* Tambahkan animasi di sini */
+  animation: munculGaleri 1.5s ease-out;
+}
+
+/* Definisikan animasinya di bagian paling bawah file */
+@keyframes munculGaleri {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Muncul dari bawah */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  padding: 3rem;
+  background-color: var(--coklat);
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query */
+/* Extra large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+
+  .home .heart {
+    display: none;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc((100% - 200px));
+    float: right;
+  }
+
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .timeline li .timeline-image {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline li .timeline-panel {
+    width: 65%;
+    transform: translateX(-20px);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+}
+/* ==========================================================================
+   KODE BARU: MENGUBAH SEMUA WARNA TEKS HITAM MENJADI COKELAT TUA
+   ========================================================================== */
+
+body,
+p,
+a,
+.navbar-nav .nav-link {
+  color: #5c4033 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  color: #5c4033 !important;
+}
+
+.navbar-brand {
+  color: #5c4033 !important;
+}
+/* Alternatif: Mengincar semua teks yang berada di dalam lingkaran countdown */
+[id*="countdown"] span,
+.simply-amount,
+.simply-word {
+  color: #ffffff !important;
+}
+/* ==========================================================================
+   MENGUBAH WARNA LATAR BELAKANG FOOTER MENJADI COKELAT TUA
+   ========================================================================== */
+footer {
+  background-color: var(--coklat) !important; /* Latar belakang cokelat tua */
+  padding-top: 4rem !important; /* Jarak dalam bagian atas */
+  padding-bottom: 4rem !important; /* Jarak dalam bagian bawah */
+  text-align: center; /* Membuat semua konten di dalam rata tengah */
+}
+
+/* Mengubah semua teks di dalam footer menjadi putih */
+footer p,
+footer span,
+footer a,
+footer .nav-link {
+  color: #ffffff !important;
+}
+
+/* Mengubah warna teks username instagram/sosmed Anda (@jhnv_re) menjadi putih */
+footer a,
+footer span {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Mengubah warna semua ikon media sosial menjadi putih bersih */
+footer .bi,
+footer i {
+  color: #ffffff !important;
+  font-size: 1.2rem; /* Mengatur ukuran ikon agar pas */
+  display: inline-block;
+  margin: 0 8px; /* Jarak antar ikon sosial media */
+}
+/* Pembatas Scroll Area Ucapan */
+#comments-container::-webkit-scrollbar {
+  width: 5px;
+}
+#comments-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+#comments-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+/* Efek tombol interaktif saat ditekan */
+#comment-form button:active {
+  transform: scale(0.96);
+}
+
+/* Kotak List Doa yang Muncul */
+.comment-item {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03) !important;
+  border: 1px solid rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.3s ease;
+}
+
+/* Memberikan delay agar foto muncul bergantian */
+.col:nth-child(1) .gallery-img {
+  animation-delay: 0.2s;
+}
+.col:nth-child(2) .gallery-img {
+  animation-delay: 0.4s;
+}
+.col:nth-child(3) .gallery-img {
+  animation-delay: 0.6s;
+}
+.col:nth-child(4) .gallery-img {
+  animation-delay: 0.8s;
+}
+.col:nth-child(5) .gallery-img {
+  animation-delay: 1s;
+}
+.col:nth-child(6) .gallery-img {
+  animation-delay: 1.2s;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efek zoom saat kursor diarahkan ke foto */
+.gallery-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/* ... (kode-kode lama Anda di bagian atas) ... */
+
+/* Efek zoom saat kursor diarahkan ke foto */
+.gallery-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* --- TAMBAHKAN KODE FOOTER DI BAWAH SINI --- */
+footer {
+  background-color: var(--coklat) !important;
+  color: #cccccc !important;
+  padding: 20px 0 !important;
+}
+
+footer .block {
+  display: inline !important;
+  margin: 0 5px !important;
+  font-size: 14px !important;
+}
+
+footer ul {
+  list-style: none !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 15px !important;
+  margin-top: 10px !important;
+}
+
+footer a {
+  color: #ffffff !important;
+}

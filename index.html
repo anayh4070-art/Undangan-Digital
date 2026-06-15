@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ana & Younghoon</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+        <h1>Ana & Younghoon</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"
+          >Lihat Undangan</a
+        >
+      </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">AnaYH</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AnaYH</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#comments">ucapan</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>
+              Diselenggarakan pada 20 November 2028 di Palopo,Sulawesi Selatan.
+            </h3>
+            <p>
+              Oleh karena itu, dengan segala hormat, kami bermaksud untuk
+              mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan
+              kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Ana</h3>
+                <p>
+                  Putri tercinta yang siap memulai perjalanan hidup baru,
+                  mengikat janji suci dalam ikatan pernikahan yang abadi.
+                </p>
+                <p>
+                  Putra dari Bpk. Sholehuddin <br />
+                  dan <br />
+                  Ibu Asriani
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/Ana.jpeg"
+                  alt="Ana"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/Yh.jpeg"
+                  alt="Younghoon"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Younghoon</h3>
+                <p>
+                  Pria yang penuh tanggung jawab, santun, dan bersahaja, yang
+                  melangkah dengan niat ibadah untuk membangun keluarga yang
+                  sakinah, mawaddah, wa rahmah.
+                </p>
+                <p>
+                  Putra dari Bpk. Leo <br />
+                  dan <br />
+                  Ibu Tamy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Alamat: Gedung Scc, Kodiklat TNI AD. <br />
+              Jl. Jenderal Sudirman, Tompotika, Kec. Wara, Kota Palopo
+            </p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3710613136927!2d120.19196457351424!3d-2.9943289398755173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d915f089fe08ea9%3A0x5a4094f5043cc418!2sGedung%20Saodenrae%20Convention%20Center%20(SCC)!5e0!3m2!1sid!2sid!4v1780967113443!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <a
+              href="https://maps.app.goo.gl/BBAHd7zmh1e6dfPF7"
+              target="_blank"
+              class="btn btn-light btn-sm my-3"
+              >Klik untuk membuka peta</a
+            >
+            <p class="description">
+              Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di
+              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
+              pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Selasa, 20 November 2028</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Selasa, 20 November 2028</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>
+              Dari sebuah awal yang sederhana, cinta tumbuh dan mendewasakan
+              kami. Inilah sekelumit kisah perjalanan dua hati yang memutuskan
+              untuk terus berjalan beriringan.Dari sebuah awal yang sederhana,
+              cinta tumbuh dan mendewasakan kami. Inilah sekelumit kisah
+              perjalanan dua hati yang memutuskan untuk terus berjalan
+              beriringan.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/wedding1.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>1 Juni 2025</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Hari di mana takdir mempertemukan tatapan kami untuk
+                      pertama kalinya. Sebuah awal sederhana yang tanpa kami
+                      sadari akan menjadi awal dari perjalanan panjang dua hati.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/wedding2.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>14 Agustus 2025</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Bukan lagi sekadar kedekatan biasa. Di titik ini, kami
+                      berkomitmen untuk saling menerima, menyelaraskan tujuan
+                      hidup, dan memantapkan hati untuk melangkah ke arah yang
+                      sama.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/wedding3.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>7 November 2028</span>
+                  </div>
+                  <div class="timeline-body">
+                    Di hadapan keluarga besar, kami saling bertukar cincin
+                    sebagai simbol pengikat janji. Sebuah momen sakral yang
+                    mendekatkan mimpi kami menuju gerbang pernikahan yang sah.
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori Kisah Kami</span>
+            <h2>Galeri Foto</h2>
+            <p>
+              Sederet memori yang tertangkap lensa, menjadi saksi bisu tumbuh
+              dan mekamnya rasa di antara kita.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+        >
+          <div class="col mt-3">
+            <a
+              href="img/gallery/g5.jpeg"
+              data-toggle="lightbox"
+              data-caption="Ana & Younghoon"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/wedding1.jpeg"
+                alt="Ana & Younghoon"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/300/1200/768"
+              data-toggle="lightbox"
+              data-caption="Ana & Younghoon"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/wedding2.jpeg"
+                alt="Ana & Younghoon"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/301/1200/768"
+              data-toggle="lightbox"
+              data-caption="Ana & Younghoon"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/tumbnail.jpeg"
+                alt="Ana & Younghoon"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/302/1200/768"
+              data-toggle="lightbox"
+              data-caption="Ana & Younghoon"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/wedding3.jpeg"
+                alt="Ana & Younghoon"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/304/1200/768"
+              data-toggle="lightbox"
+              data-caption="Ana & Younghoon"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/Ana.jpeg"
+                alt="Ana & Younghoon"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/305/1200/768"
+              data-toggle="lightbox"
+              data-caption="Ana & Younghoon"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/Yh.jpeg"
+                alt="Ana & Younghoon"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>
+              "Tanpa mengurangi rasa hormat, bagi Bapak/Ibu/Saudara/i yang ingin
+              memberikan tanda kasih untuk pernikahan kami, dapat melalui metode
+              di bawah ini."
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BCA</div>
+                123456789 - ANA
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">MANDIRI</div>
+                987654321 - ANA
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">QRIS GOPAY</div>
+                <img
+                  src="img/gallery/QRIS.jpeg"
+                  alt="QR"
+                  class="img-thumbnail"
+                  width="150"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================================================
+     SECTION UCAPAN DAN DOA RESTU (BUKU TAMU)
+     ========================================================================== -->
+    <section
+      id="comments"
+      class="ucapan"
+      id="comments"
+      class="comments py-5"
+      style="background-color: #f4f0ea"
+    >
+      <div class="container">
+        <div
+          class="row justify-content-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="col-md-8 col-10 text-center">
+            <h2
+              style="
+                font-family: &quot;Sacramento&quot;, cursive;
+                font-size: 4.5rem;
+                font-weight: bold;
+                color: #e6a74a;
+                margin-bottom: 10px;
+              "
+            >
+              Ucapan & Doa Restu
+            </h2>
+            <p class="text-muted small">
+              Berikan ucapan selamat dan doa restu Anda kepada kedua mempelai.
+            </p>
+          </div>
+        </div>
+
+        <!-- Form Input Ucapan -->
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-7 col-11">
+            <form
+              id="comment-form"
+              class="bg-white p-4 rounded shadow-sm border"
+              style="border-radius: 12px !important"
+            >
+              <div class="mb-3">
+                <label
+                  for="comment-name"
+                  class="form-label fw-semibold"
+                  style="color: #222222"
+                  >Nama Anda</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="comment-name"
+                  placeholder="Masukkan nama lengkap"
+                  style="
+                    border-radius: 8px;
+                    padding: 10px 12px;
+                    font-size: 0.9rem;
+                  "
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="comment-text"
+                  class="form-label fw-semibold"
+                  style="color: #222222"
+                  >Ucapan & Doa</label
+                >
+                <textarea
+                  class="form-control"
+                  id="comment-text"
+                  rows="4"
+                  placeholder="Tulis doa restu Anda di sini..."
+                  style="
+                    border-radius: 8px;
+                    padding: 10px 12px;
+                    font-size: 0.9rem;
+                  "
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn px-4 py-2 shadow-sm text-white"
+                style="
+                  background-color: #b44a04;
+                  border: none;
+                  font-weight: 600;
+                  border-radius: 25px;
+                  padding: 10px 35px !important;
+                "
+              >
+                Kirim Ucapan
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Kontainer Aliran Ucapan Muncul -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-7 col-11">
+            <div
+              id="comments-container"
+              class="pe-2"
+              style="max-height: 400px; overflow-y: auto"
+            >
+              <!-- Teks Bawaan Sistem Awal -->
+              <div
+                class="comment-item bg-white p-3 rounded mb-3 shadow-sm border-start border-3"
+                style="border-left: 4px solid #e6a74a !important"
+              >
+                <h6
+                  class="fw-bold mb-1"
+                  style="font-size: 0.95rem; color: #222222"
+                >
+                  Keluarga Besar Bpk. Anton
+                </h6>
+                <p
+                  class="mb-0"
+                  style="font-size: 0.85rem; color: #555555; line-height: 1.5"
+                >
+                  "Selamat menempuh hidup baru Ana & Younghoon Semoga menjadi
+                  keluarga yang selalu diberkati Tuhan, harmonis, penuh cinta,
+                  dan bahagia selamanya."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      style="
+        background-color: #222222;
+        padding: 20px 0;
+        color: #ffffff;
+        text-align: center;
+      "
+    >
+      <div class="container">
+        <small>&copy; 2023 AnaYH Wedding. All Rights Reserved.</small>
+        <small
+          >Design by
+          <a href="https://instagram.com/jhnv_re" style="color: #ffcc80"
+            >@jhnv_re</a
+          ></small
+        >
+        <ul
+          style="
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+          "
+        >
+          <li>
+            <a href="#" style="color: #ffffff; font-size: 1.2rem"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" style="color: #ffffff; font-size: 1.2rem"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" style="color: #ffffff; font-size: 1.2rem"
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" style="color: #ffffff; font-size: 1.2rem"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" style="color: #ffffff; font-size: 1.2rem"
+              ><i class="bi bi-tiktok"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/AKU-DAN-DIRIMU-ARI-LASSO.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2028, // required
+        month: 11, // required
+        day: 20, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
+
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        // localStorage.setItem('opened', 'true');
+        playAudio();
+      }
+
+      function playAudio() {
+        song.volume = 0.1;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      // if (!localStorage.getItem('opened')) {
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+    <script>
+      // Ganti bagian script form Anda menjadi ini:
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form"); // Pastikan ini sesuai ID di HTML
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konfirmasi kehadiran berhasil terkirim!");
+            form.reset(); // Mengosongkan form setelah kirim
+          });
+        });
+      });
+    </script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("n") || "";
+      const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+
+      document.querySelector("#nama").value = nama;
+    </script>
+    <script>
+      // LOGIKA: Pengiriman Form Ucapan Berfungsi Real-time Dinamis
+      document
+        .getElementById("comment-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Mencegah reload halaman saat klik kirim
+
+          const nameInput = document.getElementById("comment-name");
+          const textInput = document.getElementById("comment-text");
+          const container = document.getElementById("comments-container");
+
+          // 1. Membuat kotak elemen baru untuk ucapan yang masuk
+          const newItem = document.createElement("div");
+          newItem.className =
+            "comment-item bg-white p-3 rounded mb-3 shadow-sm border-start border-3";
+          newItem.style.borderLeft = "4px solid #e6a74a";
+
+          // 2. Memasukkan teks inputan user ke dalam struktur HTML baru
+          newItem.innerHTML = `
+      <h6 class="fw-bold mb-1" style="font-size: 0.95rem; color: #222222 !important;">${nameInput.value}</h6>
+      <p class="mb-0" style="font-size: 0.85rem; color: #555555 !important;">"${textInput.value}"</p>
+    `;
+
+          // 3. Sisipkan ucapan baru ke daftar paling atas aliran kontainer
+          container.insertBefore(newItem, container.firstChild);
+
+          // 4. Kosongkan kembali form input nama dan pesan
+          nameInput.value = "";
+          textInput.value = "";
+
+          // 5. Scroll otomatis kembali ke bagian paling atas ucapan baru
+          container.scrollTop = 0;
+        });
+    </script>
+  </body>
+</html>
